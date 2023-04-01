@@ -1,0 +1,1091 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0209.1653                               -->
+<workbook original-version='18.1' source-build='2022.4.1 (20224.23.0209.1653)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ty_candle_export_2023-04-01' inline='true' name='federated.1qstoo31jq7yqd1epd0q10al4vez' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ty_candle_export_2023-04-01' name='textscan.08wdgxx1m51enu17kd0e10ouojv3'>
+            <connection class='textscan' directory='/Users/iremkurt/Library/CloudStorage/GoogleDrive-ytu.iremkurt@gmail.com/My Drive/data science/python_scraping/trendyol' filename='ty_candle_export_2023-04-01.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08wdgxx1m51enu17kd0e10ouojv3' name='ty_candle_export_2023-04-01.csv' table='[ty_candle_export_2023-04-01#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='index' ordinal='1' />
+            <column datatype='integer' name='id' ordinal='2' />
+            <column datatype='string' name='name' ordinal='3' />
+            <column datatype='string' name='images' ordinal='4' />
+            <column datatype='string' name='imageAlt' ordinal='5' />
+            <column datatype='integer' name='tax' ordinal='6' />
+            <column datatype='string' name='businessUnit' ordinal='7' />
+            <column datatype='boolean' name='showSexualContent' ordinal='8' />
+            <column datatype='integer' name='productGroupId' ordinal='9' />
+            <column datatype='boolean' name='hasReviewPhoto' ordinal='10' />
+            <column datatype='string' name='cardType' ordinal='11' />
+            <column datatype='string' name='sections' ordinal='12' />
+            <column datatype='string' name='variants' ordinal='13' />
+            <column datatype='string' name='categoryHierarchy' ordinal='14' />
+            <column datatype='integer' name='categoryId' ordinal='15' />
+            <column datatype='string' name='categoryName' ordinal='16' />
+            <column datatype='string' name='url' ordinal='17' />
+            <column datatype='integer' name='merchantId' ordinal='18' />
+            <column datatype='integer' name='campaignId' ordinal='19' />
+            <column datatype='string' name='promotions' ordinal='20' />
+            <column datatype='integer' name='rushDeliveryDuration' ordinal='21' />
+            <column datatype='boolean' name='freeCargo' ordinal='22' />
+            <column datatype='string' name='campaignName' ordinal='23' />
+            <column datatype='string' name='listingId' ordinal='24' />
+            <column datatype='string' name='winnerVariant' ordinal='25' />
+            <column datatype='integer' name='itemNumber' ordinal='26' />
+            <column datatype='string' name='discountedPriceInfo' ordinal='27' />
+            <column datatype='boolean' name='hasVideoContent' ordinal='28' />
+            <column datatype='boolean' name='hasCrossPromotion' ordinal='29' />
+            <column datatype='boolean' name='hasCollectableCoupon' ordinal='30' />
+            <column datatype='boolean' name='sameDayShipping' ordinal='31' />
+            <column datatype='boolean' name='isLegalRequirementConfirmed' ordinal='32' />
+            <column datatype='string' name='badges' ordinal='33' />
+            <column datatype='string' name='stamps' ordinal='34' />
+            <column datatype='integer' name='brand.id' ordinal='35' />
+            <column datatype='string' name='brand.name' ordinal='36' />
+            <column datatype='real' name='ratingScore.averageRating' ordinal='37' />
+            <column datatype='real' name='ratingScore.totalCount' ordinal='38' />
+            <column datatype='real' name='price.sellingPrice' ordinal='39' />
+            <column datatype='real' name='price.originalPrice' ordinal='40' />
+            <column datatype='real' name='price.discountedPrice' ordinal='41' />
+            <column datatype='integer' name='price.buyingPrice' ordinal='42' />
+            <column datatype='real' name='lowestPriceDuration' ordinal='43' />
+            <column datatype='real' name='collectableCouponDiscount' ordinal='44' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08wdgxx1m51enu17kd0e10ouojv3' name='ty_candle_export_2023-04-01.csv' table='[ty_candle_export_2023-04-01#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='index' ordinal='1' />
+            <column datatype='integer' name='id' ordinal='2' />
+            <column datatype='string' name='name' ordinal='3' />
+            <column datatype='string' name='images' ordinal='4' />
+            <column datatype='string' name='imageAlt' ordinal='5' />
+            <column datatype='integer' name='tax' ordinal='6' />
+            <column datatype='string' name='businessUnit' ordinal='7' />
+            <column datatype='boolean' name='showSexualContent' ordinal='8' />
+            <column datatype='integer' name='productGroupId' ordinal='9' />
+            <column datatype='boolean' name='hasReviewPhoto' ordinal='10' />
+            <column datatype='string' name='cardType' ordinal='11' />
+            <column datatype='string' name='sections' ordinal='12' />
+            <column datatype='string' name='variants' ordinal='13' />
+            <column datatype='string' name='categoryHierarchy' ordinal='14' />
+            <column datatype='integer' name='categoryId' ordinal='15' />
+            <column datatype='string' name='categoryName' ordinal='16' />
+            <column datatype='string' name='url' ordinal='17' />
+            <column datatype='integer' name='merchantId' ordinal='18' />
+            <column datatype='integer' name='campaignId' ordinal='19' />
+            <column datatype='string' name='promotions' ordinal='20' />
+            <column datatype='integer' name='rushDeliveryDuration' ordinal='21' />
+            <column datatype='boolean' name='freeCargo' ordinal='22' />
+            <column datatype='string' name='campaignName' ordinal='23' />
+            <column datatype='string' name='listingId' ordinal='24' />
+            <column datatype='string' name='winnerVariant' ordinal='25' />
+            <column datatype='integer' name='itemNumber' ordinal='26' />
+            <column datatype='string' name='discountedPriceInfo' ordinal='27' />
+            <column datatype='boolean' name='hasVideoContent' ordinal='28' />
+            <column datatype='boolean' name='hasCrossPromotion' ordinal='29' />
+            <column datatype='boolean' name='hasCollectableCoupon' ordinal='30' />
+            <column datatype='boolean' name='sameDayShipping' ordinal='31' />
+            <column datatype='boolean' name='isLegalRequirementConfirmed' ordinal='32' />
+            <column datatype='string' name='badges' ordinal='33' />
+            <column datatype='string' name='stamps' ordinal='34' />
+            <column datatype='integer' name='brand.id' ordinal='35' />
+            <column datatype='string' name='brand.name' ordinal='36' />
+            <column datatype='real' name='ratingScore.averageRating' ordinal='37' />
+            <column datatype='real' name='ratingScore.totalCount' ordinal='38' />
+            <column datatype='real' name='price.sellingPrice' ordinal='39' />
+            <column datatype='real' name='price.originalPrice' ordinal='40' />
+            <column datatype='real' name='price.discountedPrice' ordinal='41' />
+            <column datatype='integer' name='price.buyingPrice' ordinal='42' />
+            <column datatype='real' name='lowestPriceDuration' ordinal='43' />
+            <column datatype='real' name='collectableCouponDiscount' ordinal='44' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>images</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[images]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>images</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imageAlt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[imageAlt]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>imageAlt</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tax]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>tax</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>businessUnit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[businessUnit]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>businessUnit</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>showSexualContent</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[showSexualContent]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>showSexualContent</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>productGroupId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[productGroupId]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>productGroupId</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hasReviewPhoto</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[hasReviewPhoto]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>hasReviewPhoto</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cardType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cardType]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>cardType</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sections</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sections]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>sections</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variants</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[variants]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>variants</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryHierarchy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categoryHierarchy]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>categoryHierarchy</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[categoryId]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>categoryId</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categoryName]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>categoryName</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchantId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[merchantId]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>merchantId</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaignId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[campaignId]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>campaignId</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>promotions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[promotions]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>promotions</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rushDeliveryDuration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rushDeliveryDuration]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>rushDeliveryDuration</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freeCargo</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[freeCargo]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>freeCargo</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaignName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[campaignName]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>campaignName</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listingId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listingId]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>listingId</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winnerVariant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winnerVariant]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>winnerVariant</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>itemNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[itemNumber]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>itemNumber</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discountedPriceInfo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[discountedPriceInfo]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>discountedPriceInfo</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hasVideoContent</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[hasVideoContent]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>hasVideoContent</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hasCrossPromotion</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[hasCrossPromotion]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>hasCrossPromotion</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hasCollectableCoupon</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[hasCollectableCoupon]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>hasCollectableCoupon</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sameDayShipping</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[sameDayShipping]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>sameDayShipping</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isLegalRequirementConfirmed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[isLegalRequirementConfirmed]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>isLegalRequirementConfirmed</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>badges</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[badges]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>badges</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stamps</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stamps]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>stamps</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand.id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[brand.id]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>brand.id</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand.name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[brand.name]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>brand.name</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratingScore.averageRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ratingScore.averageRating]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>ratingScore.averageRating</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratingScore.totalCount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ratingScore.totalCount]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>ratingScore.totalCount</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price.sellingPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price.sellingPrice]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>price.sellingPrice</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price.originalPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price.originalPrice]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>price.originalPrice</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price.discountedPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price.discountedPrice]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>price.discountedPrice</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price.buyingPrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price.buyingPrice]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>price.buyingPrice</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lowestPriceDuration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lowestPriceDuration]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>lowestPriceDuration</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>collectableCouponDiscount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[collectableCouponDiscount]</local-name>
+            <parent-name>[ty_candle_export_2023-04-01.csv]</parent-name>
+            <remote-alias>collectableCouponDiscount</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='ty_candle_export_2023-04-01.csv' datatype='table' name='[__tableau_internal_object_id__].[ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08]' role='measure' type='quantitative' />
+      <column caption='Badges' datatype='string' name='[badges]' role='dimension' type='nominal' />
+      <column caption='Brand.Id' datatype='integer' name='[brand.id]' role='dimension' type='ordinal' />
+      <column caption='Brand.Name' datatype='string' name='[brand.name]' role='dimension' type='nominal' />
+      <column caption='Business Unit' datatype='string' name='[businessUnit]' role='dimension' type='nominal' />
+      <column caption='Campaign Id' datatype='integer' name='[campaignId]' role='dimension' type='ordinal' />
+      <column caption='Campaign Name' datatype='string' name='[campaignName]' role='dimension' type='nominal' />
+      <column caption='Card Type' datatype='string' name='[cardType]' role='dimension' type='nominal' />
+      <column caption='Category Hierarchy' datatype='string' name='[categoryHierarchy]' role='dimension' type='nominal' />
+      <column caption='Category Id' datatype='integer' name='[categoryId]' role='dimension' type='ordinal' />
+      <column caption='Category Name' datatype='string' name='[categoryName]' role='dimension' type='nominal' />
+      <column caption='Collectable Coupon Discount' datatype='real' name='[collectableCouponDiscount]' role='measure' type='quantitative' />
+      <column caption='Discounted Price Info' datatype='string' name='[discountedPriceInfo]' role='dimension' type='nominal' />
+      <column caption='Free Cargo' datatype='boolean' name='[freeCargo]' role='dimension' type='nominal' />
+      <column caption='Has Collectable Coupon' datatype='boolean' name='[hasCollectableCoupon]' role='dimension' type='nominal' />
+      <column caption='Has Cross Promotion' datatype='boolean' name='[hasCrossPromotion]' role='dimension' type='nominal' />
+      <column caption='Has Review Photo' datatype='boolean' name='[hasReviewPhoto]' role='dimension' type='nominal' />
+      <column caption='Has Video Content' datatype='boolean' name='[hasVideoContent]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Image Alt' datatype='string' name='[imageAlt]' role='dimension' type='nominal' />
+      <column caption='Images' datatype='string' name='[images]' role='dimension' type='nominal' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Is Legal Requirement Confirmed' datatype='boolean' name='[isLegalRequirementConfirmed]' role='dimension' type='nominal' />
+      <column caption='Item Number' datatype='integer' name='[itemNumber]' role='dimension' type='ordinal' />
+      <column caption='Listing Id' datatype='string' name='[listingId]' role='dimension' type='nominal' />
+      <column caption='Lowest Price Duration' datatype='real' name='[lowestPriceDuration]' role='measure' type='quantitative' />
+      <column caption='Merchant Id' datatype='integer' name='[merchantId]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Product Group Id' datatype='integer' name='[productGroupId]' role='dimension' type='ordinal' />
+      <column caption='Promotions' datatype='string' name='[promotions]' role='dimension' type='nominal' />
+      <column caption='Rush Delivery Duration' datatype='integer' name='[rushDeliveryDuration]' role='measure' type='quantitative' />
+      <column caption='Same Day Shipping' datatype='boolean' name='[sameDayShipping]' role='dimension' type='nominal' />
+      <column caption='Sections' datatype='string' name='[sections]' role='dimension' type='nominal' />
+      <column caption='Show Sexual Content' datatype='boolean' name='[showSexualContent]' role='dimension' type='nominal' />
+      <column caption='Stamps' datatype='string' name='[stamps]' role='dimension' type='nominal' />
+      <column caption='Tax' datatype='integer' name='[tax]' role='measure' type='quantitative' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Variants' datatype='string' name='[variants]' role='dimension' type='nominal' />
+      <column caption='Winner Variant' datatype='string' name='[winnerVariant]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ty_candle_export_2023-04-01.csv' id='ty_candle_export_2023-04-01.csv_876F1050337148DDB97CA81E380A2B08'>
+            <properties context=''>
+              <relation connection='textscan.08wdgxx1m51enu17kd0e10ouojv3' name='ty_candle_export_2023-04-01.csv' table='[ty_candle_export_2023-04-01#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='index' ordinal='1' />
+                  <column datatype='integer' name='id' ordinal='2' />
+                  <column datatype='string' name='name' ordinal='3' />
+                  <column datatype='string' name='images' ordinal='4' />
+                  <column datatype='string' name='imageAlt' ordinal='5' />
+                  <column datatype='integer' name='tax' ordinal='6' />
+                  <column datatype='string' name='businessUnit' ordinal='7' />
+                  <column datatype='boolean' name='showSexualContent' ordinal='8' />
+                  <column datatype='integer' name='productGroupId' ordinal='9' />
+                  <column datatype='boolean' name='hasReviewPhoto' ordinal='10' />
+                  <column datatype='string' name='cardType' ordinal='11' />
+                  <column datatype='string' name='sections' ordinal='12' />
+                  <column datatype='string' name='variants' ordinal='13' />
+                  <column datatype='string' name='categoryHierarchy' ordinal='14' />
+                  <column datatype='integer' name='categoryId' ordinal='15' />
+                  <column datatype='string' name='categoryName' ordinal='16' />
+                  <column datatype='string' name='url' ordinal='17' />
+                  <column datatype='integer' name='merchantId' ordinal='18' />
+                  <column datatype='integer' name='campaignId' ordinal='19' />
+                  <column datatype='string' name='promotions' ordinal='20' />
+                  <column datatype='integer' name='rushDeliveryDuration' ordinal='21' />
+                  <column datatype='boolean' name='freeCargo' ordinal='22' />
+                  <column datatype='string' name='campaignName' ordinal='23' />
+                  <column datatype='string' name='listingId' ordinal='24' />
+                  <column datatype='string' name='winnerVariant' ordinal='25' />
+                  <column datatype='integer' name='itemNumber' ordinal='26' />
+                  <column datatype='string' name='discountedPriceInfo' ordinal='27' />
+                  <column datatype='boolean' name='hasVideoContent' ordinal='28' />
+                  <column datatype='boolean' name='hasCrossPromotion' ordinal='29' />
+                  <column datatype='boolean' name='hasCollectableCoupon' ordinal='30' />
+                  <column datatype='boolean' name='sameDayShipping' ordinal='31' />
+                  <column datatype='boolean' name='isLegalRequirementConfirmed' ordinal='32' />
+                  <column datatype='string' name='badges' ordinal='33' />
+                  <column datatype='string' name='stamps' ordinal='34' />
+                  <column datatype='integer' name='brand.id' ordinal='35' />
+                  <column datatype='string' name='brand.name' ordinal='36' />
+                  <column datatype='real' name='ratingScore.averageRating' ordinal='37' />
+                  <column datatype='real' name='ratingScore.totalCount' ordinal='38' />
+                  <column datatype='real' name='price.sellingPrice' ordinal='39' />
+                  <column datatype='real' name='price.originalPrice' ordinal='40' />
+                  <column datatype='real' name='price.discountedPrice' ordinal='41' />
+                  <column datatype='integer' name='price.buyingPrice' ordinal='42' />
+                  <column datatype='real' name='lowestPriceDuration' ordinal='43' />
+                  <column datatype='real' name='collectableCouponDiscount' ordinal='44' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ty_candle_export_2023-04-01' name='federated.1qstoo31jq7yqd1epd0q10al4vez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qstoo31jq7yqd1epd0q10al4vez'>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[price.sellingPrice]' derivation='None' name='[none:price.sellingPrice:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[price.sellingPrice]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1qstoo31jq7yqd1epd0q10al4vez].[cnt:id:qk]</rows>
+        <cols>[federated.1qstoo31jq7yqd1epd0q10al4vez].[none:price.sellingPrice:qk]</cols>
+      </table>
+      <simple-id uuid='{1DB0D28D-BC27-4D16-BE76-57F4E0D8DB23}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qstoo31jq7yqd1epd0q10al4vez].[none:categoryId:ok]</field>
+            <field>[federated.1qstoo31jq7yqd1epd0q10al4vez].[none:id:ok]</field>
+            <field>[federated.1qstoo31jq7yqd1epd0q10al4vez].[none:merchantId:ok]</field>
+            <field>[federated.1qstoo31jq7yqd1epd0q10al4vez].[none:price.sellingPrice:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0CF3CDA4-7D26-46C3-B065-C4599B264149}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO2deXRb153fv2/BRoD7IpKiVkqiLNmS5VWO3NiJEzdp2vjMOJ20STttetLp
+      pD3TnOnMmUlPJm1ysrTp6bSZSdrZMuM0zkmOszjbKPFuR5Ysyo5ESdRKiaS4kwCx4z28/faP
+      h/cIkASInQBxP+f4UAYefrgA7vfd3/3d3+9ehhBCQKE0KOxmN4BC2UwqKgBCCAoZYHRdL+j6
+      QttSKbv11uZ6tV0JuxUVgK7rFb2+EDRNq4hdQggMw6iI7Uq1uV5tV8IudYEoDQ0VAKWhqSkB
+      0IAUpdrUlAAolGpDBUBpaKgAKA1NyQJIj4NXMiZOoVQCvlQDN27cgCAIGBwcxO3bt9HU1ITD
+      hw+Xo20USsUpWQDRaBSCIGBhYQHbt29HIBCApmlgGKbgBSJd18u6GDYbiGMxlMADQ30wDKMi
+      CynWqFeJka9Sba5X25WwW5IACCFgWRZHjx7F2NgYPB4PdF0Hy7JgGMZ+Pl9Yli3o+o14feQO
+      fn1zAQ/dtR2GYZTVtoXV+Sthu1JtrlfblbBbkgAYhkFPTw9mZmZw9OhRTExMoL29PaORDMOA
+      YZi87RVy/UYQAhipzskwTMV+FAAVsV2pNter7UrYLdkF2r17N3bv3g0AuOeee0o1R6FUFRoG
+      pTQ0NSWAcrk+FEq+1JQAKJRqQwVAaWioACgNDRUApaGhAqA0NFQAlIampgRAM0kp1aamBECh
+      VBsqAEpDQwVAaWioACgNDRUApaGhAqA0NCVXhE1MTCAcDmPHjh3w+/1oamrC4OBgudpHoVSU
+      kivC9u7di0uXLkFVVbS2tiIYDELXdbskspB62XLX1xIQILV5baU2sbXsViKVu5Ib79aj7UrY
+      LbkiTNM06LoOh8MBVVXtjmB14kIabBhGWT9gehsq+aPU0w9ez7ZrUgDhcBj79u1Dc3Mzzp8/
+      D6/XC47jAJgN5jgu77ujYRgFXb8RLMMCDAOe50EIAc+X/HHXYInL+szlpFJtrlfblbBbsrWe
+      nh773w888ECp5iiUqlJWOdGSRkq9QcOglIaGCoDS0FABUBoaKgBKQ1NTAqAFMZRqU1MCoFCq
+      DRUApaGhAqA0NFQAlIaGCoDS0FABUBoaKgBKQ0MFQGloqAAoDU3JAkgkErh48SIkScLY2Bjm
+      5+fL0S4KpSqULIDLly+jp6cHgiCA4zgsLCwUXbZG6wko1abkghhFUaAoCsbGxjA0NARBEOza
+      XqtcMF+sA7bLhfX+qqqW9QDudCpZE1ypNter7UrYLVkAvb29CAaD2L9/PyYnJ+F2u+26Xk3T
+      CqrxtWo+y1YTnDof2OFwAID9t5xUsiYYqEyb69l2ue2WLIChoSH7BO++vr6yHnRNoVSakgXA
+      MIx996Mdn1Jv0DAopaGhAqA0NDUlAFoRRqk2NSUACqXaUAFQGhoqAEpDQwVAaWioACgNDRUA
+      paGhAqA0NFQAlIaGCoDS0NSUAGgyHaXa1JQAKJRqU7IAotEoZmZmoCgKFhcXEYlEytEuCqUq
+      lCyAmzdvwuFwQBAEBAIBjI2N1VZSWw01hVJ7lFwQ09fXh4mJCTQ1NaG3txeBQMCu3ayJmmDQ
+      muCtYrsma4JFUQTHcWhvb8fY2BgcDkdt1QSD1gRvJds1VxN84MAB+4DrgYEBWhNMqStKngOk
+      1wRzHAeWLd5kpeYOhBBoevldFEr9k7W3hkIhnDx5Ei+88AJeeumlivi41SIUS+IP/+LVzW4G
+      pQbJKoCWlhb4fD709vYiGo1C07RqtqusSKqGhWA8r2sJIUjKam1FsigVI6sAOI7DsWPHsLS0
+      hP7+/opOmGqJmCjjT775GhaCic1uCqUKZJ0Ei6KIl19+GbquQ1EUEEIaYnKblDWMz4cRiifR
+      39W82c2hVJisAvB6vXj66aer2ZaKsfVlSymWrAIYHR3F2bNnceDAAXR2duLuu+9uiBGA0lhk
+      FcChQ4egKAri8XjFFnkolM0m5yTY5XJBlmVcvny5rqNAFEo2cq5aeTwehEIh88ISFrg2H+q6
+      UdYnZyrE3r17sXfv3mq1hUKpOllv64QQXL9+HaFQCKdPn4aiKBVvDJ1kU6pNzhFgeHgYwWAQ
+      AwMDOHHiRMUb0yiLbZTaIasAGIbBoUOHkEgk0N3dXZXGKIoCp9NZlfeiUIANJsGdnZ1YXFzE
+      7OxstdpTfor0qqgz1hjkFIDX64XH40EikT0vhhCCGzduwDAM3Lhxo/bEQnPaKDnIOQdoaWnB
+      kSNHcO7cOaiqCpfLteYav9+PsbExdHV1wel0wu/3o7+/P2NCW2hmZSXrAipxvVUWWQkqmZVa
+      j7bLbTenADRNw6VLl7B///51O79hGLh06RJYlsXi4iI6OjrAcZxdO1BoTbCu62VdcLNqgi2b
+      +di2r82zLVbnr8QPXo91u5W0XfWa4PHxcfT392NychLHjh1bM0FlGAbvec97MD4+jj179uDC
+      hQvweDw1VxPM8+bHzCfKZF3Lc1xe19Oa4OrarmpN8LZt23DmzBm43W67Y6RjHUJ98OBBAMDx
+      48ftxymUeiDrJDgYDCISieCjH/0ouru78yqJrNmC+BpsEqU2yCoAh8OBixcv4saNGxgfH6/z
+      XCAKZX1y1gR/8IMfRDKZxNNPP00FQNmS5JwDdHZ2orOzs1ptqVjojHpAlGzQ2zqloWkIAdDF
+      YEo2GkIAFEo2GkIAdA5AyUZDCIBCyQYVAKWhoQKgNDRUAJSGhgqA0tBQAVAampoSQE1mklK2
+      NCULwO/34/bt29B1HbOzswgGg+VoV9mgq8CUXJQsALfbDVmWMTY2hlgshomJCXq6So1DCBBJ
+      SPR3QhlOiSSEYGFhAb29vejq6oKmaTV1TjBAoGlme1RVzasNgFl/ms/19XhOcFSQ8dlvvoEv
+      fOLd6GptKrv9LVMTvBFW529paYHb7catW7fgdDprqiYYYMDzZr1uITXBHL91a4IdvI6YKCMh
+      aejrqo/a3UrZLUkADMNgaGgIuq6D53ns2bPHLESnk9nahjHzo+aX49g/UL16j1qkLOcE23fN
+      Au72tQ6pwKmwhBCI8sZuVbWYW87v5MytTE2FQWtlUkaIeVpkuVkKCfj0n7+AYEwsu+2CIGZ0
+      bJ4KoLYEUCnWk5WkaJDV7JMqSSn/iTiSqiGakJCUa+O0nflgvGZuOptFQwjg+p3lNY89++Jl
+      /PT0jayv0fQK+EA1RiQuQawRMW4WJYdBNwtNN2AYBE7HxtEXUVp7uEcgIiDXMtlWFwDLMBAl
+      FTFBgtfduOcy1O0IcPLsGP7m788X/fqNhn5V29oC8Lgc4HkWwVhys5uyqdStAEJxCXGx+GOb
+      jA1c360+AjAM0N/Z3PAT4boVAEqcvG00AmxlAVifvL+LCqBuBWD9iIZBsBwtPKxYjAAIIRCS
+      lT8ssBg03Sg4crWdCqCOBZDqvzdngvj8M28UvMC0sQu0NkQqKRr+8C9ehj8sFPRe1eDFt8fx
+      Zz88V9Br+ruaGz4UWscCMH80RdUQFxWoWmGJUsWMAJpuYH45XpFFslKZX45heila0Gs6W5sg
+      SmpDh0LrVgClYpQwB6jFZI9i7uE+txNuJ49gES7kVqGmBFBIHlG+w3Y2i9bLDYPAWMcf2uph
+      UADwuB3wepypNZHGpKYEUAileq2WgL77yiie+eXImudzjgAlJvxVagQptFkMA/R1+jAfzH4K
+      6FanbleC8523ZbvMenwhmICyzvyhUaaF5lpAbLObsWmUPALIsoxQKATDMBCLxZBMVmtlcXUX
+      Lez2t57bk2E9x/O1mvFdzMhkrgXQEaBo/H4/wuEwFhYWIIoidF3Hww8/XNG6AN0woKd1UIYp
+      3K2wXKBszazHhbBivnFrLYAQsmVqOQqhZAF0dHRgYmICu3fvRldXF/x+v13bW6ma4GdfHsWp
+      S1M4srcHuq6DEEDVVKhq5oBm1QTrqXrd9BpfwzBS/xEQYtjPWTXBiqatqQler164kJpgPe28
+      4nzqjQupgTXW+YzZ0DQNIObfVq8TgqQgLkjwuMrjETdMTTAADA8PY2BgAF6vF2NjY6bRVF1v
+      oTXBhmHkVRM8v5xAUtbAsmzKPuDgHWvqRa2aYC51vln68wQMWJYFyzJgGNZ+zqpu04219ae8
+      anYyB8/bzxVSE8xZZxCnvX4j8r3OKkXNr+5ZBxjzc3hcDrQ1uxGMS9jja8/rvfKhIWqCAeDE
+      iRMwDAMulwv33ntvWYvas1EO+7YLlOX5nC5QjXoKxXwtTgeHjmYPFoMJ7OkrnwDqhZIF4Ha7
+      7X83NZV/i431YMvQAW3PLEuvyb0QVpsKKKZVLMM0dCi0LtcByjECbLgSXGBqRU1Q5PdihUIb
+      MSeoLgXAbrILVKvBkmKb1d/VjIVgomHWPtKpSwEwZfCBVlwgIC7Ka9YF1Jxh0NpUQLEjY39X
+      CxZCiQ3XRrYidSmAcowA6S5QJCFlrCsA9TkCFEt3WxMSolKRnTA2YrPdrjoVQOb/y4peeDp0
+      2oCv6QSrV5brLRsUKECYq/ocz7HobmvCQrC6xTExQcanv/4iRGnzNgurSwGsHuolVcvI59H0
+      PBfgGDOeo+vGSp8gKzayv66g5laNIvs/OJZBb4evqtVhhBD88txtTC1GEBWkqr3vauoyGW4j
+      F+h7r1zB0M6N97xkGQAMY3b2VK+wOkc9hkGL9c0YhkFflcsjBUnFS++Mw8lzSGximWl9jgA5
+      JsGEEMwtx/La7oNJjQCabqS5ROZfrQ7rAUqZm/R3NWNuuTrlkYQQ/OriHfS0e7G7r62k3T1K
+      paYEkG8UY6MRgBCS1z3asqOtk8dTj5Pg/EemtZ28v9MHf1ioSiRIUjT88txt/Oa770Kzx4n4
+      JpaY1pQA8mWjKKhukLxi2hxnGtJ1ww6LWn/1LJVi+ZLzRlqxipjiL+3raEYwlsy5X2q5OHt1
+      Fi4Hj/sO9MLX5KQjQKFsNFLk23F5lgXDYE0I1GK9kYHJ4/0B4BvPv41z1+YyHkuIClhmJTmv
+      3JSiq662JgiSWvHt22VVw8mzt/DUo0PgWBbNHhfidA5QGBt1QJ2sDWumQ4i5PzjHmdmiGc+l
+      XkdAbDeIkJWU6nyZWorg3LXZjMf8EQE8x8LtrEzsoZTJuRUKXQoVlxOk55n6PjK2CE3X8dBd
+      2wEAzU3UBSqYjW7AmSPA2h/FSOXwr0vaw5YA5pfj+NoPVvbcyaebOR0crk0FMtoSFSr7Qxc2
+      N1l78fbURLgQCCGYmA/jv33nNF49P5nzWt0w8NMzN/HBh/fbN4Fm6gKVFwIrRz/7GGAYJOvG
+      WOkPW5GgRFLBjemVLdbzcYGIQRCIiJgNrNTbRhMVjneXOLcodKvEuCjjmV9cxOefeQP+sIDb
+      c6Gc11+dDCASl/DokZ32Y74mFxKivGkrwmURgNV4szpr8/NJdIPgxXfGcerS1LqTUYMQGIQg
+      Lip2n1nPxbHmAAzDmFVfBXw0g5jfy42pFeFUfAQoUQED3S24OR2Enkc5qKrp+P1vvIhAVMRX
+      f/d9+Mjjh7CYw30iBPjxmzfw/gf3wudx2o/7PE6IslrqVq9FU7IAZmZm8NZbb0GSJJw9exbn
+      zp0rWgRlEQ8x7/B3FiKIZLnjmmWQqTLGVJ+x4/7pLlDaWgAhK2WH+bgaBiFo9bkzJpWVHgFK
+      Dc8+eLAfoXgSF28vbnhtMJYEIQT/4TceRF9nM/o6fVjIUVNwey6IqaUInrhvT8bjPrcDkqJv
+      Wg12ybOxgYEBhEIhhEIh7N+/H36/v+RzgjeO8hj2X13XAQIkRBlfPjkCQVIzltaDURG/vjkP
+      wKyX/dPvn8MHHtybCnMato++HEngz3/0Nv7Ju/aZLyTAL4bHMLecQFyUERNkfOU7p1N2tA1r
+      gg3DAM8yUNPqfyMJCQSVqwkmhORdE0xA1rTD7WDx1IkD+N6rVzC0owOuHIePBMJx+DxOsDDf
+      s93rRCQhQUhK4Fb9fIQAP3nzBh47shNNLi7jPV0OFpKiQpJlMMhd7liTNcGCIEAQBAwMDGB2
+      dhaSJBV9TrBhGHA4HBtez6bCiFZNMBhAUnVcGl+CrOrguZWBTdUNTC5EAJj1pOfHFnDXri4Q
+      QszXs2bHjQgKLk8s4Yn7V+5Qt+fCuJ7mwozNBMEgs6ZXNwyQVC1zOoQADgcHArNO1zBWXK5K
+      1QSzLJtnTbAGBsy67Xji/r14/eIU3ro6hycfHMxqIyqoaPW54XE7wTAMvE1Aq9eFcELBtjZP
+      ht355TgujS/ha7/3gTXv1+rzmGsPTH7nMpe7Jrgs+wINDAzA7Xajp6cHBw4cqPr2GgzMDpe+
+      3WE6PL9qtwiSvlBltpWQzBVmAuR1dNDb1+fw0zNjax43CIGD56Dr5htJigZZ0ypadJLvt74Q
+      TEBS1m+Ly8njn733MJ4/dT1neHI5KqKzpcn+rZ0ODu3NnjVhVEIIfnbmJh69Zyc6Wzxr7Hg9
+      Tsjq5rlAJQugs7MTO3fuhNfrRV9fH9rbK1tYvZ5LRVKPWzn+q8sdHdzq7VLMVV4C2L2GgIBh
+      Mu3nM+mdnI+s2ZXZcoucHGtPrgVJXbPfqHVd2chTAfPLcag5Ahb37uvFju4W/PzMWOrGsrad
+      y1ERXa0rNeAcy6Kn3btmIhyMJnF6dBpPPTq07o3RwXHgORbJTTo/ua7CoIqq43//YDjjQAwr
+      6c0SwXrwq7YsscRipA8FZG2OUT4JcetNtP/sh+fgD4vgec6+s4mSAt0wwKXlcfzwjWu4dHtp
+      w/fIl3yjQOaZANnTNTiOxcefPIJfvn0b/oiA5167iotp7STEPJSkqy1zE4T+Tl/GLnOEACeH
+      x3Df/j70dTav32YGqXygzVkLqCsBSIqGS7eXEI6vdLoZvxlnN+9S67+OXz0CpO5o6TlDeurF
+      mr5iJHdZpEk4IWW8LyEElyeWIMoqHGkjgCir4FkWLsfKXOHKpB93liIbvke+5Ot5zi/Hcy8G
+      Ati1rRX/4MhOfO+VUdyeC+HC2Lz9HCFAKJbMGAEAoLezGYuhuP19hBNJvHl5Gh8+MZSzPc1N
+      LsSTm7MaXFf1ANYPnOkvmnfyvzs5knWnB25V9py5EEYwcmvBDlNad3s1o7Amd9SBEIJIQkIy
+      LVpipFbgGAAOnrUFFRNk+DzODDcgKsiQNuFwCutUmFzeF8Mw+Mhjh/D733gRDp6FKKkwCAGb
+      WhMJriOAPiujlJjf5WvnJ7Grtw2D23O7xZu5GlzTI8Bq39OK3yfTSuisp6f9+e9wbC2EBSIi
+      hKRpy7rbr64sW7ddVs2AbiAhKrg1G7RdIauNYEzXy1pUigoyWr2uDDtRQUZSVrPOBQqdHeQT
+      fNANA0shwRwBNniH9mY3njoxhEBExGIoYZ+Pphum8FdPavs6fPBHROg6QVyU8eqFSTx1Yn3f
+      P51yC6CQuVVNC+DOYgRff/5t+//11J1bVAqbMKWnIwApF2hV337utStIKlrGRHWjyMRf//w8
+      AhEBkqLjnRtztm2DmP64g2ft1eRIQkKrL7WJWGpiGRNkJBUNI7cW8Z2XRjPuyAvBOP7X988h
+      VMA5vvl4QMFoEoqqgxgbbzHPMAz+0SP70dPmRTgh2fOtSMLcR3T1OoHX44SDZxERZJwenUF7
+      sxuHd3dv2Cafx4VEmVwgRdXx/dev4RvPv53XCnNNCWD1neL2bAinLk3Z/2/dudPDnPkIfXWO
+      OzHIGndpIWhuC6LmMQJYnL+5AJ5ncXBnJ2KpNAczumSNAOzKCJCQ0epd2UVPlFVouoGkrOH6
+      VAAv/XrcPtF+KSzgi98+hXPX5goqF8xnDrAYStjfYz53SbeTx1d+5704uLMLk/NhAGYEqKPF
+      A3aVa8kyDLa1+zDjj+HkW2N46sRQKuM2N+UaAcLxJP77d0/j3LVZLEdF/Je/fR3L0dyn39SU
+      AFZjfXnPn7qO0Qm/OWld0ycLDyNaHWA9LBeI59icxyR9+dk3EREkeJw8+jp8iAoy/vS5s5BV
+      c7dqJmVDS4k1Kkho9a24QLGEKZikrCKaMFeaRyf9AIAvfOsNHD80gI4WT0YnXY6K+M9/9So+
+      97evr3+uVx4KWAjG0eQqbDGpu82Lw7u7cSuV7BaIiOhs8ayJmjEM0Nvhw4/fvAm3i8ex/X15
+      2W9ucpUkAEIIrt0J4I//8hV0tzbhK//2CXzuXz2Ge/f14o/+8hVcHl/KKvaaFgDPsSDEXGya
+      8UfN1IVVaZ7FhNGtRLX1SBfA6hEg/fe+PL4EXSfwepzgORbRhIRTl6YgSqpt21wIs+YAEtrS
+      RoCoaAlAQyAqYue2Vrx1ZQYAsLCcwFOPDoFlmYxinUhcQiAqQNMNnBy+tabt+bhA88EEtnev
+      H5LMxb6BDozPhVITYHMRbM37p/YZvTG9jH/8rgNw5kilSKeUmgBdN3Dy7C189btn8FvvOYzf
+      +fD9cLt48ByLj73/HvzrDxzF134wjF8M31o34bGmBcDAnLTNB+MwDIIzozMZmzfdngvhzcvT
+      BdtNL4FcjZraAt0cAfSMu5w9iU17bbvPndpq3Pyx/WHBHAEYJsMFiiRkewQgILbLJKsa/GEB
+      Hzq+H5fHl0wBwYy2WCI8f3MePz51HQQETW4HfvsfHsWvLk6tOa94o8kmIQQLwTgGulsKTpzb
+      0d2CcEJCIqlgOWIugq33ftu7m7GjpwUPpwpe8sHncSKRVApeFIwJMr7+/Nt48e1xfO63340n
+      7t+TUW3HMgzefXQ3/vjjJ/DCudv4659dWFPxVtMC0FIdNZqQoRsE4ykf1PqaliMiQvH8J4nW
+      F5xrIyZrBHDwLBTNQIvXad/J2pvNqEd6qWRbszuVimHankvbZNacBBN7wmtPgrESFRIkFYKk
+      4OCuLnS3eXF5fGXByRLAzekgfnL6JlTNAANgT18b9vS14Z0bK7F5K/S6+vOm9ynDIFgKCdje
+      3VJw6nRXaxNYhsFSWFizCpzOI4d34DMfexc8BbhZTS4HVN3Ia90FMD/X5EIYX/jWryApGr74
+      yfdg30DHuoJkGGBoRxf+6ycex1I4ga88+yYCEcH+jWpaAOlfyGsXJnHtTgDASmdz5DnEAmYE
+      6Qvf+hU0zcg5sbQmwU6eS/2bsRXX5nODwHRbrDa0N5ud2upnc8txEJhfvCM1AsiqDt0wMnzv
+      mCChu82LcErArV4XHrprO85cmbFHEEXVMRuIISbKiCQkjNxaAGBmyz56z06cHp2220GQORsy
+      DIL/+5N3MDYbzPgOlsIJDHQV7gK5nDx6O3yYXAibIdDWtXk9gDlp3tbuLch2k8sBXTeg5FGQ
+      bxCCNy9P44vfPoVHDg/gDz76CNrSbizZ6Gptwmc+/ih297bhs998DWMzQTMhsqCWbkC5C2LS
+      ffA7i2vz+wvdI3Tk1iKM1AowYN5hW1bF5m0BpInLGhWsu9rUYsROlnv/A4MZOURzgdR5W2DM
+      VAjDQFyU4XbycKQl5UUFGT3tXmi6AZeDR5PbgXfdvQPnb67c1Q2D4PTlacREGX2dPrx+4Y69
+      5cu9+3uxEIxjKeUGrf7e37oyg5ffmcBzr12xv8dIQgLLMOaoVUS+Yk+bF4GIiJgorzsHKBaP
+      i4dukHVP60xH0w383ckR/L8XLuE//ubDePqxu2zXMx/cTh7/5kPH8FuPH8YXv30Kr124Uz4B
+      WAUxw8PDZSuIyRaFWbmsuPe5Pm2OJA6ORWeLJyNVYiRVDGIJQFZX5hx8KtH9e69egarp5vFC
+      XhcABqdHzQnsxEIYqmbm5rMMA103EBeVlABWfqyoIGNbuxcMw6DF64KT59Db7sX27hb7GreT
+      w9U7AYxO+PGhRw4gFE/a0atWrwt37erG8NWVwnsp5d8mZRXfefkyfu/phzC/HMf5m/MghOCd
+      G3Po72pGk8sBl5MveHeKJrfDjlh1rJPZWSxNbgdkRcOP3riG0YmldTfpjQoyvvTsGdxZjOCr
+      v/s+HN23raisY5Zh8MT9e/DZf/luPPfalfKlQqwuiFmdH18M1p2LZZiMsKW9c0ORg421+stx
+      LHypKI71XtZzzlRnTf8xrA4TiJghSJ5jU5EqYg/fMUFO7bdvZlxqOkE8qcDlyBwBYoKMoR2d
+      YBkG3akJJcsCxw9tx9iM6bb80T9/F154exwnz97Czm2tuHdfL/ypU91NN2gHfnL6Jp56dAiE
+      ALOBOGKCjJd/PY6u1iY8fmw3GIbB9169gtlAHCeHx/Dppx/Gzm2t+PInH8/qx2fD43Jgailq
+      5v/nkSqeL24nj//00Udw9uosvvn3I4iJMg7u7ML9B/pwaHc3XA4O//O5s+jwufDpf/pI3tGl
+      bDAMg7t2deFLn3xv+UaAlpYWzM/PQxTFvA6MywdrREivIeU51s6fyeYzrk5+s2CZlakfxzJw
+      Ozm4nbw9jnAsY+cNeVw8GKwIgWGAFq8LDp617zwuBweOYyGrOpwODl63Aw6exUceuwtNLrMI
+      5s5iBH/z8/NobnLCwXFIyiq+9O1TuDrpR2+HDyzDoCflMzMMg+OHB2yh9HZ48aFHDsDl5OF2
+      8nj82G5wqb2MADNteTGUwGf+6hUMX5tFOJHEn3zzNfzoV9fxL548Ao5l8eg9O+HgOPzy3C18
+      5mOP4ui+XjAMgx3dLWsWsjaiucmJ0fEl9LStHwEqFoZhcGRwG/7dh+/H//jU+/CFTzyOu3Z1
+      4c3L0/j8M2/gD/7PS+jt8OHf/8YDJXf+dHravWBIGZ12v98Pl8uF1tZWACi4IkyWZTidKwlj
+      kYSE2UAMXrcD00tReN1OeD0ORAUZXrcDoqQiKshob/bAMAyIsgaeY9HX6UNMkCGrGpw8h6Si
+      wdAN9HT47NVep4Oz7/6ipCIUl+BycGBZBkJSwe6+NoSiSXg9Tswvx9Hmc2OgpwWBiICYIINh
+      GLR6XdiRekxWzcm108Fhd28bZv1RdLV5MTrhB8OYBef9nc24NhVAIqmAY1kc3bcNVyf92LWt
+      zXYpCAEm5kPY09cOXdfA8zwmFyPY2dMKwyCYD8axa1urXah/ey6EYCwJhmHgc+biabEAAASf
+      SURBVDsQTyrwuZ04vKfb/h6tnR760ya/qqoWXF0VF2Vcn1o29/Tsbct6XTG218NKNlwMJTDY
+      3wEGRtkrwsoqAAtCCHRdh2EYdvliPiiKAqfTufGFRaDretlGpnSsxKtCPme+VKrN9Wq7EnYr
+      kg7NMEzRc4BCRoxCKce8ZDWFnBNcDJVocz3bLrfdmqoHqGQtcaVs12Ob69V2JexWxAWiUOqF
+      mlkJJoQgEAhAUcpTGEEIQTweh2EYkCQJwaC58re8vAxJKn6DKkIIRFG0w73hcBiiKEKWZSwv
+      L5e0EGgYBgKBAOLxODRNQyAQgK7riEajSCQSJS8y6rqORCIBVVVt25FIBIKQO2V4I2RZRjAY
+      hCzLiMViiMVidvs1rbSKN1EUsby8bH83qqoikUggEomU9H1YfaJmRoA7d+5AVVXE43Hcd999
+      JdsTBAHvvPMOHnroIVy9ehUejweapsHlckEQBDzwwANF2SWEYH5+HoFAAE6nE4qiQJZl8DwP
+      r9cLn8+HgYGBomzruo7Z2VnMzMygtbUVLpcLkiRBURSoqorjx48X7QYQQjA6OopkMgmPxwOX
+      ywVZlqFpGhRFwfHjx4uyCwBXrlyB2+1Gb28vRkdH7f2GmpqaQAjB0FDumuBsGIaB4eFh7Ny5
+      E4qi2AKWJAkulwsHDhyAz+crynYikYDf76+dESASiWDfvn1l8/O8Xi+2bzczEnmex759+zA+
+      Po7BwcGSJqwMw6C5uRmCIMDr9aK3txdOpxMsy2JwcBCRSPFF7izLQhRFu8MPDg4iGo2io6PD
+      7kzFEolEIMuyHaEbHBzE8vIyenp64HK5NjaQg7a2NoTDYSwtLcHr9aKtrQ2JRAKDg4MljbaK
+      oiAej2NqagqLi4vYt8/ctc/agyqZzD8RcjU+nw+KotSOAHp6enD+/Pmy2UskEpiensbc3BxU
+      VcXIyAiOHDmCixcvlrTFHiEEw8PDaGtrg8vlwuTkJJLJJAzDwMjICLq7Ny4BzEYymbRDqk6n
+      ExcuXEBXVxcWFhYQj8dLujk4HA60t7cjHo+D53mMjIygv78f09PTEMV1imsKwDAMuFwuqKqK
+      aDQKv9+P9vZ2jIyMwOstLDEuHZfLBa/XC57n0d7ejgsXLoBhGAiCgKmpqaLv/labY7FY7bhA
+      hBB7aCtHTN0wDGiaBpY1V25VVbWHfYfDUfQokL7GwfM8VFUFx3FgWRayLMPtdpfkpkiSBJ7n
+      wXGcbU9VVTu0XIoI0ovFLduKooDjuJLCi7quQ1EUu62AKThJkkr6PgBzUU3XddsddLlc9vef
+      vmhaKNZ3UTMCoFA2g5pxgSiUzYAKgNLQUAFQtiz5bJBFBUDZsoiiiLGxtVvXp0MnwZQtw89+
+      9jNMTk7iwQcfxFtvvYW7774bPM/jzp072LVrl73Y+qlPfQq3bt3Ciy++SEcAytZB13U8+eST
+      mJubQ29vL44fP26vexw7dgyzs7NwuVyIxWJoaWmBx+OprWxQCqUUZFnGyMgIHnvsMYTDYbjd
+      bhw8eBCBQADj4+N4/PHHIUkSpqen0dzcjLa2NuoCUbYO09PT6OvrK6hqjAqA0tD8fxM5zCf8
+      wqmVAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
